@@ -12,144 +12,206 @@
         }
         
         body {
-            font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background: #ffffff;
-            color: #000000;
-            line-height: 1.65;
-            padding: 80px 40px;
-            max-width: 680px;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #fff;
+            color: #000;
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 720px;
             margin: 0 auto;
-            font-size: 17px;
+            padding: 80px 24px 120px;
+        }
+        
+        header {
+            margin-bottom: 60px;
         }
         
         h1 {
-            font-size: 1.75em;
+            font-size: 28px;
             font-weight: 400;
-            margin-bottom: 4px;
-            letter-spacing: -0.01em;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
         }
         
         .subtitle {
-            font-size: 0.94em;
+            font-size: 16px;
             color: #666;
-            margin-bottom: 48px;
             font-weight: 400;
         }
         
-        .edge {
-            font-size: 1em;
-            line-height: 1.65;
-            margin-bottom: 64px;
+        .intro {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 80px;
             color: #000;
-            font-weight: 400;
         }
         
         h2 {
-            font-size: 0.88em;
-            margin: 56px 0 24px 0;
+            font-size: 14px;
             font-weight: 600;
+            margin: 60px 0 32px 0;
             color: #000;
         }
         
-        .project {
-            margin-bottom: 32px;
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 40px;
         }
         
-        .project-title {
+        .card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s;
+        }
+        
+        .card:hover {
+            opacity: 0.6;
+        }
+        
+        .card-title {
+            font-size: 16px;
             font-weight: 400;
-            font-size: 1em;
             margin-bottom: 4px;
             color: #000;
         }
         
-        .project-desc {
+        .card-desc {
+            font-size: 16px;
             color: #666;
-            margin-bottom: 2px;
-            font-size: 1em;
             line-height: 1.6;
+            margin-bottom: 4px;
         }
         
-        .project-status {
-            font-size: 0.94em;
+        .card-meta {
+            font-size: 14px;
             color: #999;
         }
         
-        .contact {
-            margin-top: 64px;
+        .simple-list {
+            margin-bottom: 40px;
         }
         
-        .contact a {
+        .simple-item {
+            margin-bottom: 24px;
+        }
+        
+        .item-title {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+        
+        .item-desc {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+        
+        .item-meta {
+            font-size: 14px;
+            color: #999;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        footer h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        
+        a {
             color: #000;
             text-decoration: underline;
-            text-decoration-color: #ccc;
-            text-underline-offset: 3px;
+            text-decoration-color: #d0d0d0;
+            text-underline-offset: 2px;
         }
         
-        .contact a:hover {
+        a:hover {
             text-decoration-color: #000;
         }
         
         @media (max-width: 768px) {
-            body {
-                padding: 60px 24px;
-                font-size: 16px;
+            .container {
+                padding: 60px 20px 100px;
             }
             
             h1 {
-                font-size: 1.6em;
+                font-size: 24px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Ian Lee</h1>
-    <div class="subtitle">Investor-Operator · BioAI · Cross-Border Execution</div>
-    
-    <div class="edge">
-        I translate between AI infrastructure narratives, manufacturing/regulatory reality, and capital markets—especially across US, China, and SEA. I've operated inside XtalPi (BioAI scaling), run diligence across life sciences and hard tech, and now build systems where outcomes follow patterns with intent, not proximity.
-    </div>
-    
-    <h2>Phase III</h2>
-    
-    <div class="project">
-        <div class="project-title">XtalPi</div>
-        <div class="project-desc">Deputy CFO. BioAI platform scaling quantum chemistry and biologics simulation for drug discovery.</div>
-        <div class="project-status">2017–Present</div>
-    </div>
-    
-    <h2>Lead Optimization</h2>
-    
-    <div class="project">
-        <div class="project-title">想趣</div>
-        <div class="project-desc">Senior Advisor. Cross-border consumer and lifestyle ventures.</div>
-        <div class="project-status">Active</div>
-    </div>
-    
-    <div class="project">
-        <div class="project-title">Lumetica</div>
-        <div class="project-desc">Founding Advisor. CDMO automation infrastructure for biologics manufacturing.</div>
-        <div class="project-status">Active</div>
-    </div>
-    
-    <h2>Target Validation</h2>
-    
-    <div class="project">
-        <div class="project-title">Passive Home Security System: 助</div>
-        <div class="project-desc">Household management platform. Fast iteration, real exposure, learning velocity.</div>
-        <div class="project-status">Q1 2026</div>
-    </div>
-    
-    <div class="project">
-        <div class="project-title">Biologics Automation Machines</div>
-        <div class="project-desc">Manufacturing automation at the AI systems / regulatory compliance interface.</div>
-        <div class="project-status">Research phase</div>
-    </div>
-    
-    <h2>Notes</h2>
-    
-    <div class="contact">
-        <h2>Contact</h2>
-        <p><a href="mailto:ian@ianlee.io">ian@ianlee.io</a></p>
+    <div class="container">
+        <header>
+            <h1>Ian Lee</h1>
+            <div class="subtitle">Investor-Operator · BioAI · Cross-Border Execution</div>
+        </header>
+        
+        <div class="intro">
+            I translate between AI infrastructure narratives, manufacturing/regulatory reality, and capital markets—especially across US, China, and SEA. I've operated inside XtalPi (BioAI scaling), run diligence across life sciences and hard tech, and now build systems where outcomes follow patterns with intent, not proximity.
+        </div>
+        
+        <h2>Phase III</h2>
+        
+        <div class="simple-list">
+            <div class="simple-item">
+                <div class="item-title">XtalPi</div>
+                <div class="item-desc">Deputy CFO. BioAI platform scaling quantum chemistry and biologics simulation for drug discovery.</div>
+                <div class="item-meta">2017–Present</div>
+            </div>
+        </div>
+        
+        <h2>Lead Optimization</h2>
+        
+        <div class="simple-list">
+            <div class="simple-item">
+                <div class="item-title">想趣</div>
+                <div class="item-desc">Senior Advisor. Cross-border consumer and lifestyle ventures.</div>
+                <div class="item-meta">Active</div>
+            </div>
+            
+            <div class="simple-item">
+                <div class="item-title">Lumetica</div>
+                <div class="item-desc">Founding Advisor. CDMO automation infrastructure for biologics manufacturing.</div>
+                <div class="item-meta">Active</div>
+            </div>
+        </div>
+        
+        <h2>Target Validation</h2>
+        
+        <div class="simple-list">
+            <div class="simple-item">
+                <div class="item-title">Passive Home Security System: 助</div>
+                <div class="item-desc">Household management platform. Fast iteration, real exposure, learning velocity.</div>
+                <div class="item-meta">Q1 2026</div>
+            </div>
+            
+            <div class="simple-item">
+                <div class="item-title">Biologics Automation Machines</div>
+                <div class="item-desc">Manufacturing automation at the AI systems / regulatory compliance interface.</div>
+                <div class="item-meta">Research phase</div>
+            </div>
+        </div>
+        
+        <h2>Notes</h2>
+        
+        <footer>
+            <h2>Contact</h2>
+            <p><a href="mailto:ian@ianlee.io">ian@ianlee.io</a></p>
+        </footer>
     </div>
 </body>
 </html>
